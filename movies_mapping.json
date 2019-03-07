@@ -1,0 +1,81 @@
+{
+    "settings": {
+    "index.mapping.ignore_malformed": true
+    },
+    "mappings" : {
+      "movies" : {
+        "properties" : {
+          "title" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "release_date" : {
+            "type" : "date",
+            "format" : "YYYY-MM-dd"
+          },
+          "genres" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "plot" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "directors" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "actors" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+             }
+           },
+           "rating" : {
+             "type" : "float"
+              },
+           "year" : {
+             "type" : "integer"
+           },
+            "rank" : {
+             "type" : "integer"
+           },
+           "running_time_secs" : {
+             "type" : "integer"
+           },
+          "image_url" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+           }
+          }
+        }
+      }
+    }
